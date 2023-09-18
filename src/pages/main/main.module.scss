@@ -1,0 +1,12 @@
+.layoutRow {
+	display: grid;
+	grid-template-columns: 1fr 3.35fr;
+	grid-column-gap: 32px;
+	min-height: calc(100vh - 98px);
+}
+
+.layoutCol {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

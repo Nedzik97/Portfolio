@@ -1,0 +1,100 @@
+.menu {
+
+}
+
+.menuList {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin: 0 -6px;
+	list-style-type: none;
+}
+
+.menuItem {
+}
+
+.menuLink {
+	padding: 16px 0;
+  text-align: left;
+  font-size: 28px;
+  line-height: 1.16;
+	position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+	letter-spacing: 1px;
+	color: #ffffff;
+  text-transform: uppercase;
+	font-family: inherit;
+	z-index: 1;
+}
+
+.menuLink::before,
+.menuLink::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: 0.20s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.menuLink::before {
+	width: 15px;
+  height: 14px;
+  right: calc(100% + 6px);
+  background: url("../../images/icons/start-tag.svg") no-repeat;
+  background-size: 15px 14px;
+}
+
+.menuLink::after {
+	width: 25px;
+	height: 19px;
+	left: calc(100% + 6px);
+	background-size: 25px 19px;
+	background: url("../../images/icons/end-tag.svg") no-repeat;
+}
+
+	.menuLink:hover,
+	.menuLink:focus {
+		transform: translateX(18px);
+}
+
+	.menuLink:hover::before,
+	.menuLink:hover::after,
+	.menuLink:hover,
+	.menuLink:focus,
+	.menuLink:focus::before,
+	.menuLink:focus::after {
+			opacity: 1;
+			transition: 0.15s cubic-bezier(0.47,0,0.745,0.715);
+	}
+
+	.menuLink:focus-visible:before,
+	.menuLink:focus-visible:after {
+			opacity: 0;
+	}
+
+	.menuLink:focus-visible {
+		transform: translateX(0);
+}
+
+.menuLink.activeLink:focus,
+.menuLink.activeLink:hover {
+	transform: translateX(0);
+}
+
+.menuLink.activeLink::before,
+.menuLink.activeLink::after {
+		opacity: 0;
+}
+
+.activeLink {
+	color: #92d79a;
+}
+
+.menuLink:focus,
+.menuLink:hover {
+	color: #92d79a;
+}
