@@ -1,0 +1,44 @@
+.aboutContainer {
+	z-index: 1;
+	width: 700px;
+}
+
+p span {
+	color: #92d79a;
+}
+
+.aboutContainer h2 {
+	font-size: 44px;
+  line-height: 1.13;
+	font-weight: 600;
+	margin-bottom: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover > span {
+	color: #92d79a;
+	transition: color 0.3s ease;
+}
+
+.aboutContainer p {
+	margin-bottom: 50px;
+	font-size: 24px;
+}
+
+.buttonDowloadText {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-right: 10px;
+	color: #ffffff;
+}
+
+.buttonDownloadInfo {
+	color: #ffffff;
+}
+
+.buttonDowload svg {
+	margin-right: 15px;
+}

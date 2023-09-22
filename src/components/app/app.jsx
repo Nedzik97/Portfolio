@@ -1,6 +1,7 @@
 import { Header } from "../header/header";
 import { Main } from "../../pages/main/main";
 import { FlyingCube } from "../cube/flying-cube";
+import { Footer } from "../footer/footer";
 import styles from "./app.module.scss";
 
 export const App = () => {
@@ -13,11 +14,11 @@ export const App = () => {
         <div className={styles.main}>
           <Main />
         </div>
-        <div className={styles.footer}>footer</div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
       <FlyingCube />
     </div>
   );
 };
-
-export default App;

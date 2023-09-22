@@ -1,0 +1,53 @@
+.invisible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.skillsContainer {
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+}
+
+.courses {
+	width: 700px;
+}
+
+.courses p {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 50px;
+	color: #92d79a;
+}
+
+.coursesList {
+	padding: 0;
+}
+
+.courseItem {
+	list-style-type: none;
+	font-size: 24px;
+}
+
+.courseItem:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.skillList {
+	list-style-type: none;
+}
+
+.skillsItem {
+	margin-bottom: 40px;
+	color: #92d79a;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 25px;
+}

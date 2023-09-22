@@ -1,0 +1,25 @@
+.social {
+	display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.socialLink {
+	display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.socialLink svg {
+	width: 30px;
+  height: 30px;
+  fill: #ffffff;
+  transition: 0.15s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.socialLink:hover svg,
+.socialLink:focus svg {
+  fill: #89c891;
+}
