@@ -15,7 +15,7 @@ export const Main = () => {
       </div>
       <div className={styles.layoutCol}>
         <Routes>
-          <Route path="/" element={<Promo />} />
+          <Route path="*" element={<Promo />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/skills" element={<Skills />} />
