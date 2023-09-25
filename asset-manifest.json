@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.92e39d34.css",
+    "main.js": "/Portfolio/static/js/main.f341acd4.js",
+    "static/media/keksobboking.png": "/Portfolio/static/media/keksobboking.56a46950828ba4b64714.png",
+    "static/media/weather-forecast.png": "/Portfolio/static/media/weather-forecast.e61604ca5664fad8fd46.png",
+    "static/media/dating-profile-registration.png": "/Portfolio/static/media/dating-profile-registration.428df8a27383cbf8b77e.png",
+    "static/media/github-battle.png": "/Portfolio/static/media/github-battle.74c1baac40777ba21308.png",
+    "static/media/glaccy.png": "/Portfolio/static/media/glaccy.8661695259cd20f4aa9a.png",
+    "static/media/to-do-list.png": "/Portfolio/static/media/to-do-list.260e76f8ed750aa8eb61.png",
+    "index.html": "/Portfolio/index.html",
+    "static/media/end-tag.svg": "/Portfolio/static/media/end-tag.af10d3addbe723880c1f.svg",
+    "static/media/start-tag.svg": "/Portfolio/static/media/start-tag.a0fd3101cda62a417324.svg",
+    "main.92e39d34.css.map": "/Portfolio/static/css/main.92e39d34.css.map",
+    "main.f341acd4.js.map": "/Portfolio/static/js/main.f341acd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92e39d34.css",
+    "static/js/main.f341acd4.js"
+  ]
+}
