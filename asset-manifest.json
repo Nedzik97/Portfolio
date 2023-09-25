@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.92e39d34.css",
-    "main.js": "/Portfolio/static/js/main.f341acd4.js",
+    "main.js": "/Portfolio/static/js/main.503bdff2.js",
     "static/media/keksobboking.png": "/Portfolio/static/media/keksobboking.56a46950828ba4b64714.png",
     "static/media/weather-forecast.png": "/Portfolio/static/media/weather-forecast.e61604ca5664fad8fd46.png",
     "static/media/dating-profile-registration.png": "/Portfolio/static/media/dating-profile-registration.428df8a27383cbf8b77e.png",
@@ -12,10 +12,10 @@
     "static/media/end-tag.svg": "/Portfolio/static/media/end-tag.af10d3addbe723880c1f.svg",
     "static/media/start-tag.svg": "/Portfolio/static/media/start-tag.a0fd3101cda62a417324.svg",
     "main.92e39d34.css.map": "/Portfolio/static/css/main.92e39d34.css.map",
-    "main.f341acd4.js.map": "/Portfolio/static/js/main.f341acd4.js.map"
+    "main.503bdff2.js.map": "/Portfolio/static/js/main.503bdff2.js.map"
   },
   "entrypoints": [
     "static/css/main.92e39d34.css",
-    "static/js/main.f341acd4.js"
+    "static/js/main.503bdff2.js"
   ]
 }
