@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Pagination } from "../pagination/pagination";
+import { Pagination } from "../../components/pagination/pagination";
 import styles from "./work.module.scss";
 import { projects } from "../../moks/moks";
 

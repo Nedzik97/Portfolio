@@ -1,7 +1,7 @@
 import { Menu } from "../../components/menu/menu";
 import { Routes, Route } from "react-router-dom";
 import { About } from "../about/about";
-import { Work } from "../../components/work/work";
+import { Work } from "../work/work";
 import { Skills } from "../skills/skills";
 import { ContactForm } from "../contact-form.jsx/contacts";
 import { Promo } from "../promo/promo";
