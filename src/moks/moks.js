@@ -7,7 +7,12 @@ export const projects = [
     skills: ["React", "JS", "HTML", "CSS"],
     description:
       "Access comprehensive weather predictions for cities globally, including detailed wind speed and direction data, on our straightforward platform",
-    libraries: ["classnames", "react-router-dom, saas, react-multi-carousel"],
+    libraries: [
+      "classnames",
+      "react-router-dom",
+      "saas",
+      "react-multi-carousel",
+    ],
     imgPreview: require("../images/projects-images/weather-forecast.png"),
   },
   {

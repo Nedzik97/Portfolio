@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <div className={styles.headerTopPanel}>
       <h1>
-        <Link href="/">Valerii Nedozym</Link>
+        <Link to="/">Valerii Nedozym</Link>
       </h1>
       <div className={styles.toggleThemePanel}>
         <label className={styles.labelLight} htmlFor="light">
