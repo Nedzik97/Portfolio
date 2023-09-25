@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { About } from "../../components/about/about";
 import { Work } from "../../components/work/work";
 import { Skills } from "../../components/skills/skills";
-import { Contacts } from "../../components/contacts/contacts";
+import { ContactForm } from "../../components/contacts/contacts";
 import styles from "./main.module.scss";
 
 export const Main = () => {
@@ -17,7 +17,7 @@ export const Main = () => {
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/contacts" element={<ContactForm />} />
         </Routes>
       </div>
     </div>
