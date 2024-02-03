@@ -67,7 +67,7 @@ export const ContactForm = () => {
   return (
     <section>
       <h2>Want to work with me?</h2>
-      <form className={styles.contactForm} onSubmit={handleSubmit}>
+      <form className={styles.contactForm} onSubmit={(e) => handleSubmit(e)}>
         <div className={styles.formRow}>
           <input
             type="text"

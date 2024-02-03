@@ -1,10 +1,10 @@
 import { Menu } from "../../components/menu/menu";
 import { Routes, Route } from "react-router-dom";
-import { About } from "../about/about";
-import { Work } from "../work/work";
-import { Skills } from "../skills/skills";
+import { About } from "../../components/about/about";
+import { Work } from "../../components/work/work";
+import { Skills } from "../../components/skills/skills";
 import { ContactForm } from "../contact-form.jsx/contacts";
-import { Promo } from "../promo/promo";
+import { Promo } from "../../components/promo/promo";
 import styles from "./main.module.scss";
 
 export const Main = () => {

@@ -1,19 +1,17 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./menu.module.scss";
 import cx from "classnames";
 
 export const Menu = () => {
-  const [activelink, setActiveLink] = useState("");
+  const location = useLocation();
   return (
     <div>
       <nav className={styles.menu}>
         <ul className={styles.menuList}>
           <li className={styles.menuItem}>
             <Link
-              onClick={() => setActiveLink("about")}
               className={cx(styles.menuLink, {
-                [styles.activeLink]: activelink === "about",
+                [styles.activeLink]: location.pathname === "/about",
               })}
               to="/about"
             >
@@ -22,9 +20,8 @@ export const Menu = () => {
           </li>
           <li className={styles.menuItem}>
             <Link
-              onClick={() => setActiveLink("work")}
               className={cx(styles.menuLink, {
-                [styles.activeLink]: activelink === "work",
+                [styles.activeLink]: location.pathname === "/work",
               })}
               to="/work"
             >
@@ -33,9 +30,8 @@ export const Menu = () => {
           </li>
           <li className={styles.menuItem}>
             <Link
-              onClick={() => setActiveLink("skills")}
               className={cx(styles.menuLink, {
-                [styles.activeLink]: activelink === "skills",
+                [styles.activeLink]: location.pathname === "/skills",
               })}
               to="/skills"
             >
@@ -44,9 +40,8 @@ export const Menu = () => {
           </li>
           <li className={styles.menuItem}>
             <Link
-              onClick={() => setActiveLink("contacts")}
               className={cx(styles.menuLink, {
-                [styles.activeLink]: activelink === "contacts",
+                [styles.activeLink]: location.pathname === "/contacts",
               })}
               to="/contacts"
             >
