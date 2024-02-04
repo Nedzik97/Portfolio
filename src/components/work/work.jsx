@@ -19,34 +19,34 @@ export const Work = () => {
 
   return (
     <section className={styles.work}>
-      {displayedProjects.map((projects) => (
-        <section className={styles.workContainer}>
+      {displayedProjects.map((project) => (
+        <section className={styles.workContainer} key={project.number}>
           <div className={styles.workInfo}>
-            <h2 className={styles.workTitle}>{projects.title}</h2>
-            <p className={styles.descriptionText}>{projects.description}</p>
+            <h2 className={styles.workTitle}>{project.title}</h2>
+            <p className={styles.descriptionText}>{project.description}</p>
             <ul className={styles.workTechs}>
               <span>Skills: </span>
-              {projects.skills.map((skill) => (
+              {project.skills.map((skill) => (
                 <li> {skill} </li>
               ))}
             </ul>
             <ul className={styles.libraries}>
-              {projects.libraries ? <span>Libraries: </span> : null}
-              {projects.libraries
-                ? projects.libraries.map((library) => <li> {library} </li>)
+              {project.libraries ? <span>Libraries: </span> : null}
+              {project.libraries
+                ? project.libraries.map((library) => <li> {library} </li>)
                 : null}
             </ul>
             <div className={styles.workButtons}>
-              <a href={projects.demoLink} className={styles.workButton}>
+              <a href={project.demoLink} className={styles.workButton}>
                 Discover
               </a>
-              <a href={projects.githubLink} className={styles.workButton}>
+              <a href={project.githubLink} className={styles.workButton}>
                 view code
               </a>
             </div>
           </div>
           <div className={styles.workPreview}>
-            <img src={projects.imgPreview} alt={projects.title} />
+            <img src={project.imgPreview} alt={project.title} />
           </div>
         </section>
       ))}
