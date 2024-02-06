@@ -23,3 +23,12 @@
 .socialLink:focus svg {
   fill: #89c891;
 }
+
+.themeLight svg {
+	fill: #101626;
+}
+
+.themeLight.socialLink:hover svg,
+.themeLight.socialLink:focus svg {
+  fill: #89c891;
+}

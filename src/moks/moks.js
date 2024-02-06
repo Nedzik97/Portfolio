@@ -85,3 +85,5 @@ export const projects = [
     imgPreview: require("../images/projects-images/glaccy.png"),
   },
 ];
+
+export const menuLists = ["about", "work", "skills", "contacts"];
