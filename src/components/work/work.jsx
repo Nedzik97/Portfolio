@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Pagination } from "../pagination/pagination";
-import styles from "./work.module.scss";
 import { projects } from "../../moks/moks";
+import { useTheme } from "../toggle-theme/toggle-theme";
+import styles from "./work.module.scss";
+import cx from "classnames";
 
 export const Work = () => {
+  const { theme } = useTheme();
   const itemsPerPage = 1;
   const [currentPage, setCurrentPage] = useState(1);
   const pages = Math.ceil(projects.length / itemsPerPage);
@@ -22,15 +25,35 @@ export const Work = () => {
       {displayedProjects.map((project) => (
         <section className={styles.workContainer} key={project.number}>
           <div className={styles.workInfo}>
-            <h2 className={styles.workTitle}>{project.title}</h2>
-            <p className={styles.descriptionText}>{project.description}</p>
-            <ul className={styles.workTechs}>
+            <h2
+              className={cx(styles.workTitle, {
+                [styles.themeLight]: theme === "light",
+              })}
+            >
+              {project.title}
+            </h2>
+            <p
+              className={cx(styles.descriptionText, {
+                [styles.themeLight]: theme === "light",
+              })}
+            >
+              {project.description}
+            </p>
+            <ul
+              className={cx(styles.workTechs, {
+                [styles.themeLight]: theme === "light",
+              })}
+            >
               <span>Skills: </span>
               {project.skills.map((skill) => (
                 <li> {skill} </li>
               ))}
             </ul>
-            <ul className={styles.libraries}>
+            <ul
+              className={cx(styles.libraries, {
+                [styles.themeLight]: theme === "light",
+              })}
+            >
               {project.libraries ? <span>Libraries: </span> : null}
               {project.libraries
                 ? project.libraries.map((library) => <li> {library} </li>)

@@ -1,7 +1,9 @@
+import { useTheme } from "../toggle-theme/toggle-theme";
 import styles from "./pagination.module.scss";
 import cx from "classnames";
 
 export const Pagination = ({ currentPage, totalPages, handlePageClick }) => {
+  const { theme } = useTheme();
   const amountPages = Array.from({ length: totalPages }, (_, i) => i + 1);
   return (
     <div className={styles.paginationContainer}>
@@ -11,6 +13,7 @@ export const Pagination = ({ currentPage, totalPages, handlePageClick }) => {
             key={index + 1}
             className={cx(styles.paginationItem, {
               [styles.activeLink]: currentPage === index + 1,
+              [styles.themeLight]: theme === "light",
             })}
             onClick={() => handlePageClick(index + 1)}
           >

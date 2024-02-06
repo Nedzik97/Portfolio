@@ -14,6 +14,10 @@ p span {
 	margin-bottom: 60px;
 }
 
+.themeLight h2 {
+	color: #101626;
+}
+
 a {
 	text-decoration: none;
 }
@@ -28,6 +32,10 @@ a:hover > span {
 	font-size: 24px;
 }
 
+.themeLight p {
+	color: #101626;
+}
+
 .buttonDowloadText {
 	font-size: 20px;
 	text-transform: uppercase;
@@ -35,8 +43,16 @@ a:hover > span {
 	color: #ffffff;
 }
 
+.themeLight {
+	color: #101626;
+}
+
 .buttonDownloadInfo {
 	color: #ffffff;
+}
+
+.themeLight {
+	color: #101626;
 }
 
 .buttonDowload svg {

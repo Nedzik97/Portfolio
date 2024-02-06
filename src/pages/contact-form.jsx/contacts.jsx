@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useTheme } from "../../components/toggle-theme/toggle-theme";
+import cx from "classnames";
 import styles from "./contacts-form.module.scss";
 
 export const ContactForm = () => {
+  const { theme } = useTheme();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,10 +69,19 @@ export const ContactForm = () => {
 
   return (
     <section>
-      <h2>Want to work with me?</h2>
+      <h2
+        className={cx({
+          [styles.themeLight]: theme === "light",
+        })}
+      >
+        Want to work with me?
+      </h2>
       <form className={styles.contactForm} onSubmit={(e) => handleSubmit(e)}>
         <div className={styles.formRow}>
           <input
+            className={cx({
+              [styles.themeLight]: theme === "light",
+            })}
             type="text"
             name="name"
             value={formData.name}
@@ -78,6 +90,9 @@ export const ContactForm = () => {
             required
           />
           <input
+            className={cx({
+              [styles.themeLight]: theme === "light",
+            })}
             type="email"
             name="email"
             value={formData.email}
@@ -87,13 +102,23 @@ export const ContactForm = () => {
           />
         </div>
         <textarea
+          className={cx({
+            [styles.themeLight]: theme === "light",
+          })}
           name="message"
           value={formData.message}
           onInput={handleChange}
           placeholder="Message"
           required
         />
-        <button type="submit">Submit</button>
+        <button
+          className={cx({
+            [styles.themeLight]: theme === "light",
+          })}
+          type="submit"
+        >
+          Submit
+        </button>
       </form>
     </section>
   );

@@ -87,3 +87,34 @@ export const projects = [
 ];
 
 export const menuLists = ["about", "work", "skills", "contacts"];
+
+export const skills = [
+  `React`,
+  `Redux`,
+  `TypeScript`,
+  `JS(ES5+)`,
+  `HTML`,
+  `CSS`,
+  "Sass",
+];
+
+export const courses = [
+  {
+    name: `React. Development of complex client applications`,
+  },
+  {
+    name: `Javascript, Level 2`,
+  },
+  {
+    name: `Javascript, Level 1`,
+  },
+  {
+    name: `HTML and CSS, Level 2`,
+  },
+  {
+    name: `HTML and CSS, Level 1`,
+  },
+  {
+    name: `General English – intermediate`,
+  },
+];

@@ -1,37 +1,11 @@
+import { skills } from "../../moks/moks";
+import { courses } from "../../moks/moks";
+import { useTheme } from "../toggle-theme/toggle-theme";
 import styles from "./skills.module.scss";
-
-const skills = [
-  `React`,
-  `Redux`,
-  `TypeScript`,
-  `JS(ES5+)`,
-  `HTML`,
-  `CSS`,
-  "Sass",
-];
-
-const courses = [
-  {
-    name: `React. Development of complex client applications`,
-  },
-  {
-    name: `Javascript, Level 2`,
-  },
-  {
-    name: `Javascript, Level 1`,
-  },
-  {
-    name: `HTML and CSS, Level 2`,
-  },
-  {
-    name: `HTML and CSS, Level 1`,
-  },
-  {
-    name: `General English – intermediate`,
-  },
-];
+import cx from "classnames";
 
 export const Skills = () => {
+  const { theme } = useTheme();
   return (
     <div className={styles.skillsContainer}>
       <h2 className={styles.invisible}>Skills</h2>
@@ -42,7 +16,13 @@ export const Skills = () => {
         </p>
         <ul className={styles.coursesList}>
           {courses.map((course) => (
-            <li className={styles.courseItem}>{course.name}</li>
+            <li
+              className={cx(styles.courseItem, {
+                [styles.themeLight]: theme === "light",
+              })}
+            >
+              {course.name}
+            </li>
           ))}
         </ul>
       </div>
