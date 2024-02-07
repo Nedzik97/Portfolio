@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.be25d95f.css",
-    "main.js": "/Portfolio/static/js/main.b242222f.js",
+    "main.css": "/Portfolio/static/css/main.7f9483db.css",
+    "main.js": "/Portfolio/static/js/main.f6b934a3.js",
     "static/media/keksobboking.png": "/Portfolio/static/media/keksobboking.56a46950828ba4b64714.png",
     "static/media/weather-forecast.png": "/Portfolio/static/media/weather-forecast.e61604ca5664fad8fd46.png",
     "static/media/dating-profile-registration.png": "/Portfolio/static/media/dating-profile-registration.428df8a27383cbf8b77e.png",
@@ -11,12 +11,13 @@
     "static/media/to-do-list.png": "/Portfolio/static/media/to-do-list.260e76f8ed750aa8eb61.png",
     "index.html": "/Portfolio/index.html",
     "static/media/end-tag.svg": "/Portfolio/static/media/end-tag.af10d3addbe723880c1f.svg",
+    "static/media/flying-cube.svg": "/Portfolio/static/media/flying-cube.8310173c72c1b2196c6ca4e055583ba1.svg",
     "static/media/start-tag.svg": "/Portfolio/static/media/start-tag.a0fd3101cda62a417324.svg",
-    "main.be25d95f.css.map": "/Portfolio/static/css/main.be25d95f.css.map",
-    "main.b242222f.js.map": "/Portfolio/static/js/main.b242222f.js.map"
+    "main.7f9483db.css.map": "/Portfolio/static/css/main.7f9483db.css.map",
+    "main.f6b934a3.js.map": "/Portfolio/static/js/main.f6b934a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.be25d95f.css",
-    "static/js/main.b242222f.js"
+    "static/css/main.7f9483db.css",
+    "static/js/main.f6b934a3.js"
   ]
 }
