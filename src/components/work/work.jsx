@@ -1,9 +1,10 @@
+import cx from "classnames";
 import { useState } from "react";
 import { Pagination } from "../pagination/pagination";
-import { projects } from "../../moks/moks";
+import { projects } from "../../mocks/mocks";
 import { useTheme } from "../toggle-theme/toggle-theme";
+
 import styles from "./work.module.scss";
-import cx from "classnames";
 
 export const Work = () => {
   const { theme } = useTheme();

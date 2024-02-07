@@ -1,6 +1,7 @@
-import { useTheme } from "../toggle-theme/toggle-theme";
-import styles from "./pagination.module.scss";
 import cx from "classnames";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
+import styles from "./pagination.module.scss";
 
 export const Pagination = ({ currentPage, totalPages, handlePageClick }) => {
   const { theme } = useTheme();

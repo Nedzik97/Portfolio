@@ -1,6 +1,5 @@
-import { Cube } from "./cube";
+import сube from "../../images/icons/flying-cube.svg";
 import { useEffect, useState } from "react";
-// import styles from "./cube.module.scss";
 
 export const FlyingCube = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -16,7 +15,7 @@ export const FlyingCube = () => {
       setPosition({ x, y });
     };
 
-    const animationInterval = setInterval(animateCube, 3000); // Интервал 3 секунды
+    const animationInterval = setInterval(animateCube, 3000);
 
     return () => {
       clearInterval(animationInterval);
@@ -30,12 +29,13 @@ export const FlyingCube = () => {
         position: "absolute",
         width: "100px",
         height: "100px",
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        transition: "left 7s linear, top 7s linear",
+        left: `0`,
+        top: `0`,
+        transform: `translate(${position.x}px, ${position.y}px)`,
+        transition: "transform 7s linear, transform 7s linear",
       }}
     >
-      <Cube />
+      <img src={сube} alt="" />
     </div>
   );
 };

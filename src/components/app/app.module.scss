@@ -53,4 +53,19 @@
 	flex-grow: 1;
 }
 
+.layoutRow {
+	display: grid;
+	grid-template-columns: 1fr 3.35fr;
+	grid-column-gap: 32px;
+	min-height: calc(100vh - 150px);
+	z-index: 1;
+}
+
+.layoutCol {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+}
+
 

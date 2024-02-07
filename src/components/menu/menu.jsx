@@ -1,8 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
-import { menuLists } from "../../moks/moks";
-import { useTheme } from "../toggle-theme/toggle-theme";
-import styles from "./menu.module.scss";
 import cx from "classnames";
+import { Link, useLocation } from "react-router-dom";
+import { menuLists } from "../../mocks/mocks";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
+import styles from "./menu.module.scss";
 
 export const Menu = () => {
   const { theme } = useTheme();

@@ -1,5 +1,6 @@
-import { useTheme } from "../toggle-theme/toggle-theme";
 import cx from "classnames";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
 import styles from "./about.module.scss";
 
 export const About = () => {

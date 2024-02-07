@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { useTheme } from "../../components/toggle-theme/toggle-theme";
 import cx from "classnames";
-import styles from "./contacts-form.module.scss";
+import { useState } from "react";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
+import styles from "./contact-form.module.scss";
 
 export const ContactForm = () => {
   const { theme } = useTheme();

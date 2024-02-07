@@ -1,7 +1,8 @@
-import styles from "./header.module.scss";
+import cx from "classnames";
 import { Link } from "react-router-dom";
 import { useTheme } from "../toggle-theme/toggle-theme";
-import cx from "classnames";
+
+import styles from "./header.module.scss";
 
 export const Header = () => {
   const { theme, toggleTheme } = useTheme();

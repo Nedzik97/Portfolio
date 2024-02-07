@@ -1,5 +1,6 @@
-import { useTheme } from "../toggle-theme/toggle-theme";
 import cx from "classnames";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
 import styles from "./social.module.scss";
 
 export const Social = () => {

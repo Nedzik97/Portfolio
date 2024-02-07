@@ -1,6 +1,7 @@
+import cx from "classnames";
 import { Link } from "react-router-dom";
 import { useTheme } from "../toggle-theme/toggle-theme";
-import cx from "classnames";
+
 import styles from "./promo.module.scss";
 
 export const Promo = () => {

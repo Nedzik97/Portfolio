@@ -1,8 +1,9 @@
-import { skills } from "../../moks/moks";
-import { courses } from "../../moks/moks";
-import { useTheme } from "../toggle-theme/toggle-theme";
-import styles from "./skills.module.scss";
 import cx from "classnames";
+import { skills } from "../../mocks/mocks";
+import { courses } from "../../mocks/mocks";
+import { useTheme } from "../toggle-theme/toggle-theme";
+
+import styles from "./skills.module.scss";
 
 export const Skills = () => {
   const { theme } = useTheme();
