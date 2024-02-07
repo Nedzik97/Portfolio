@@ -1,11 +1,11 @@
 import cx from "classnames";
 import { Link } from "react-router-dom";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { useTheme } from "../../context/theme";
 
 import styles from "./promo.module.scss";
 
 export const Promo = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   return (
     <div class={styles.container}>
       <h1 class={styles.text}>
@@ -14,7 +14,7 @@ export const Promo = () => {
       </h1>
       <Link
         className={cx(styles.button, {
-          [styles.themeLight]: theme === "light",
+          [styles.themeLight]: isLightTheme,
         })}
         to="/contacts"
       >

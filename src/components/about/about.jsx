@@ -1,14 +1,14 @@
 import cx from "classnames";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { useTheme } from "../../context/theme";
 
 import styles from "./about.module.scss";
 
 export const About = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   return (
     <div
       className={cx(styles.aboutContainer, {
-        [styles.themeLight]: theme === "light",
+        [styles.themeLight]: isLightTheme,
       })}
     >
       <h2>Hi, I'm Valerii Nedozym</h2>
@@ -39,14 +39,14 @@ export const About = () => {
           </svg>
           <span
             className={cx(styles.buttonDowloadText, {
-              [styles.themeLight]: theme === "light",
+              [styles.themeLight]: isLightTheme,
             })}
           >
             Download CV
           </span>
           <span
             className={cx(styles.buttonDownloadInfo, {
-              [styles.themeLight]: theme === "light",
+              [styles.themeLight]: isLightTheme,
             })}
           >
             (pdf 58kb)

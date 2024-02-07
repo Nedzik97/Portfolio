@@ -1,17 +1,17 @@
 import cx from "classnames";
 import { Link } from "react-router-dom";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { useTheme } from "../../context/theme";
 
 import styles from "./header.module.scss";
 
 export const Header = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { isLightTheme, toggleTheme } = useTheme();
   return (
     <div className={styles.headerTopPanel}>
       <h1>
         <Link
           className={cx({
-            [styles.themeLight]: theme === "light",
+            [styles.themeLight]: isLightTheme,
           })}
           to="/"
         >
@@ -22,7 +22,7 @@ export const Header = () => {
         <label className={styles.labelLight} htmlFor="light">
           <svg
             className={cx({
-              [styles.currentTheme]: theme === "light",
+              [styles.currentTheme]: isLightTheme,
             })}
             width="22"
             height="22"
@@ -39,15 +39,15 @@ export const Header = () => {
           onClick={toggleTheme}
           className={styles.inputLight}
           type="radio"
-          value={theme}
+          value={"light"}
           name="toggle theme"
           id="light"
-          checked={theme === "light"}
+          checked={isLightTheme}
         />
         <label className={styles.labelDark} htmlFor="dark">
           <svg
             className={cx({
-              [styles.currentTheme]: theme === "dark",
+              [styles.currentTheme]: !isLightTheme,
             })}
             width="20"
             height="20"
@@ -64,10 +64,10 @@ export const Header = () => {
           onClick={toggleTheme}
           className={styles.inputDark}
           type="radio"
-          value={theme}
+          value={"dark"}
           name="toggle theme"
           id="dark"
-          checked={theme === "dark"}
+          checked={!isLightTheme}
         />
       </div>
     </div>

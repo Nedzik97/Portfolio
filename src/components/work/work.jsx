@@ -1,13 +1,13 @@
 import cx from "classnames";
 import { useState } from "react";
 import { Pagination } from "../pagination/pagination";
-import { projects } from "../../mocks/mocks";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { projects } from "../../data/data";
+import { useTheme } from "../../context/theme";
 
 import styles from "./work.module.scss";
 
 export const Work = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   const itemsPerPage = 1;
   const [currentPage, setCurrentPage] = useState(1);
   const pages = Math.ceil(projects.length / itemsPerPage);
@@ -28,21 +28,21 @@ export const Work = () => {
           <div className={styles.workInfo}>
             <h2
               className={cx(styles.workTitle, {
-                [styles.themeLight]: theme === "light",
+                [styles.themeLight]: isLightTheme,
               })}
             >
               {project.title}
             </h2>
             <p
               className={cx(styles.descriptionText, {
-                [styles.themeLight]: theme === "light",
+                [styles.themeLight]: isLightTheme,
               })}
             >
               {project.description}
             </p>
             <ul
               className={cx(styles.workTechs, {
-                [styles.themeLight]: theme === "light",
+                [styles.themeLight]: isLightTheme,
               })}
             >
               <span>Skills: </span>
@@ -52,7 +52,7 @@ export const Work = () => {
             </ul>
             <ul
               className={cx(styles.libraries, {
-                [styles.themeLight]: theme === "light",
+                [styles.themeLight]: isLightTheme,
               })}
             >
               {project.libraries ? <span>Libraries: </span> : null}

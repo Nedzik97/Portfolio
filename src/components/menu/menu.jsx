@@ -1,12 +1,12 @@
 import cx from "classnames";
 import { Link, useLocation } from "react-router-dom";
-import { menuLists } from "../../mocks/mocks";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { menuLists } from "../../data/data";
+import { useTheme } from "../../context/theme";
 
 import styles from "./menu.module.scss";
 
 export const Menu = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   const location = useLocation();
   return (
     <div>
@@ -18,7 +18,7 @@ export const Menu = () => {
                 <Link
                   className={cx(styles.menuLink, {
                     [styles.activeLink]: location.pathname === `/${menuItem}`,
-                    [styles.lightTheme]: theme === "light",
+                    [styles.lightTheme]: isLightTheme,
                   })}
                   to={`/${menuItem}`}
                 >

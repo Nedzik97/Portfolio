@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Header } from "../header/header";
 import { FlyingCube } from "../flying-cube/flying-cube";
 import { Footer } from "../footer/footer";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { useTheme } from "../../context/theme";
 import { Menu } from "../menu/menu";
 import { About } from "../about/about";
 import { Work } from "../work/work";
@@ -14,11 +14,11 @@ import { Promo } from "../promo/promo";
 import styles from "./app.module.scss";
 
 export const App = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   return (
     <div
       className={cx(styles.App, {
-        [styles.lightTheme]: theme === "light",
+        [styles.lightTheme]: isLightTheme,
       })}
     >
       <div className={styles.wrapper}>

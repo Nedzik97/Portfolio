@@ -1,12 +1,12 @@
 import cx from "classnames";
-import { skills } from "../../mocks/mocks";
-import { courses } from "../../mocks/mocks";
-import { useTheme } from "../toggle-theme/toggle-theme";
+import { skills } from "../../data/data";
+import { courses } from "../../data/data";
+import { useTheme } from "../../context/theme";
 
 import styles from "./skills.module.scss";
 
 export const Skills = () => {
-  const { theme } = useTheme();
+  const { isLightTheme } = useTheme();
   return (
     <div className={styles.skillsContainer}>
       <h2 className={styles.invisible}>Skills</h2>
@@ -19,7 +19,7 @@ export const Skills = () => {
           {courses.map((course) => (
             <li
               className={cx(styles.courseItem, {
-                [styles.themeLight]: theme === "light",
+                [styles.themeLight]: isLightTheme,
               })}
             >
               {course.name}
