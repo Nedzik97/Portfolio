@@ -1,4 +1,4 @@
-import сube from "../../images/icons/flying-cube.svg";
+import сube from "../../assets/icons/flying-cube.svg";
 import { useEffect, useState } from "react";
 
 export const FlyingCube = () => {

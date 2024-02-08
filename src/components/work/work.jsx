@@ -1,25 +1,14 @@
 import cx from "classnames";
-import { useState } from "react";
 import { Pagination } from "../pagination/pagination";
-import { projects } from "../../data/data";
 import { useTheme } from "../../context/theme";
+import { usePagination } from "../../hooks/usePagination";
 
 import styles from "./work.module.scss";
 
 export const Work = () => {
   const { isLightTheme } = useTheme();
-  const itemsPerPage = 1;
-  const [currentPage, setCurrentPage] = useState(1);
-  const pages = Math.ceil(projects.length / itemsPerPage);
-  const displayedProjects = projects.filter((_, index) => {
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    return index >= startIndex && index < endIndex;
-  });
-
-  const handlePageClick = (page) => {
-    setCurrentPage(page);
-  };
+  const { displayedProjects, amountPages, currentPage, handlePageClick } =
+    usePagination();
 
   return (
     <section className={styles.work}>
@@ -75,8 +64,8 @@ export const Work = () => {
         </section>
       ))}
       <Pagination
+        amountPages={amountPages}
         currentPage={currentPage}
-        totalPages={pages}
         handlePageClick={handlePageClick}
       />
     </section>

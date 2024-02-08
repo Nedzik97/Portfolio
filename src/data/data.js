@@ -8,7 +8,7 @@ export const projects = [
     description:
       "This is my portfolio, and it's quite simple. It features my pet projects.",
     libraries: ["classnames", "react-router-dom", "saas", ""],
-    imgPreview: require("../images/project-images/portfolio.png"),
+    imgPreview: require("../assets/project-images/portfolio.png"),
   },
   {
     number: 2,
@@ -24,7 +24,7 @@ export const projects = [
       "saas",
       "react-multi-carousel",
     ],
-    imgPreview: require("../images/project-images/weather-forecast.png"),
+    imgPreview: require("../assets/project-images/weather-forecast.png"),
   },
   {
     number: 3,
@@ -35,7 +35,7 @@ export const projects = [
     description:
       "Discover a user-friendly platform for comparing GitHub profiles. Quickly find and evaluate developers, simplifying your search for the perfect project collaborator.",
     libraries: ["classnames", "react-router-dom", "saas"],
-    imgPreview: require("../images/project-images/github-battle.png"),
+    imgPreview: require("../assets/project-images/github-battle.png"),
   },
   {
     number: 4,
@@ -46,7 +46,7 @@ export const projects = [
     description:
       "Plan your tasks and future goals with our easy-to-use To-Do List page.",
     libraries: ["classnames", "react-router-dom", "saas"],
-    imgPreview: require("../images/project-images/to-do-list.png"),
+    imgPreview: require("../assets/project-images/to-do-list.png"),
   },
   {
     number: 5,
@@ -62,7 +62,7 @@ export const projects = [
       "react-router-dom",
       "saas",
     ],
-    imgPreview: require("../images/project-images/dating-profile-registration.png"),
+    imgPreview: require("../assets/project-images/dating-profile-registration.png"),
   },
   {
     number: 6,
@@ -72,7 +72,7 @@ export const projects = [
     skills: ["JS", "HTML", "CSS"],
     description:
       "Reserve hotel rooms in Tokyo and explore our user-friendly platform designed for easy booking and hotel search. Plan your stay effortlessly and discover the perfect accommodation in the heart of Tokyo or its vibrant neighborhoods.",
-    imgPreview: require("../images/project-images/keksobboking.png"),
+    imgPreview: require("../assets/project-images/keksobboking.png"),
   },
   {
     number: 7,
@@ -82,7 +82,7 @@ export const projects = [
     skills: ["HTML", "CSS"],
     description:
       "Explore our basic HTML ice cream shop page. It's a simple representation of store",
-    imgPreview: require("../images/project-images/glaccy.png"),
+    imgPreview: require("../assets/project-images/glaccy.png"),
   },
 ];
 

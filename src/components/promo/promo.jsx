@@ -1,6 +1,7 @@
 import cx from "classnames";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../context/theme";
+import { paths } from "../../utils";
 
 import styles from "./promo.module.scss";
 
@@ -16,7 +17,7 @@ export const Promo = () => {
         className={cx(styles.button, {
           [styles.themeLight]: isLightTheme,
         })}
-        to="/contacts"
+        to={paths.contacts}
       >
         Contact me
       </Link>

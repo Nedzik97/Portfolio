@@ -3,9 +3,9 @@ import { useTheme } from "../../context/theme";
 
 import styles from "./pagination.module.scss";
 
-export const Pagination = ({ currentPage, totalPages, handlePageClick }) => {
+export const Pagination = ({ amountPages, currentPage, handlePageClick }) => {
   const { isLightTheme } = useTheme();
-  const amountPages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
   return (
     <div className={styles.paginationContainer}>
       <ul className={styles.paginationList}>

@@ -10,6 +10,7 @@ import { Work } from "../work/work";
 import { Skills } from "../skills/skills";
 import { ContactForm } from "../contact-form/contact-form";
 import { Promo } from "../promo/promo";
+import { paths } from "../../utils";
 
 import styles from "./app.module.scss";
 
@@ -32,11 +33,11 @@ export const App = () => {
             </div>
             <div className={styles.layoutCol}>
               <Routes>
-                <Route path="*" element={<Promo />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/work" element={<Work />} />
-                <Route path="/skills" element={<Skills />} />
-                <Route path="/contacts" element={<ContactForm />} />
+                <Route path={paths.main} element={<Promo />} />
+                <Route path={paths.about} element={<About />} />
+                <Route path={paths.work} element={<Work />} />
+                <Route path={paths.skills} element={<Skills />} />
+                <Route path={paths.contacts} element={<ContactForm />} />
               </Routes>
             </div>
           </div>

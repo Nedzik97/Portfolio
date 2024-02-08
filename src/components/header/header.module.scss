@@ -5,6 +5,7 @@
 	margin-bottom: 0;
 	font-size: 12px;
 	font-family: "Inconsolata";
+	z-index: 1;
 };
 
 h1 a::before {
@@ -14,7 +15,7 @@ h1 a::before {
 		left: -10px;
 		width: 12px;
 		height: 13px;
-		background: url("../../images/icons/start-tag.svg") no-repeat center center;
+		background: url("../../assets/icons/start-tag.svg") no-repeat center center;
 		background-size: cover;
 }
 
@@ -25,7 +26,7 @@ h1 a::after {
 		right: -30px;
 		width: 20px;
 		height: 16px;
-		background: url("../../images/icons/end-tag.svg") no-repeat center center;
+		background: url("../../assets/icons/end-tag.svg") no-repeat center center;
 		background-size: cover;
 	}
 
