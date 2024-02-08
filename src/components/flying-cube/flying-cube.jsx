@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 export const FlyingCube = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
+  const maxX = window.innerWidth - 100;
+  const maxY = window.innerHeight - 100;
+
   useEffect(() => {
     const animateCube = () => {
-      const maxX = window.innerWidth - 100;
-      const maxY = window.innerHeight - 100;
-
       const x = Math.random() * maxX;
       const y = Math.random() * maxY;
 
