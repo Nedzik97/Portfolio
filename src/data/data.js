@@ -1,14 +1,14 @@
 export const projects = [
   {
     number: 1,
-    title: "Portfolio",
-    demoLink: "https://nedzik97.github.io/Portfolio/",
-    githubLink: "https://github.com/Nedzik97/Portfolio",
-    skills: ["React", "JS", "HTML", "CSS"],
+    title: "What-to-watch",
+    demoLink: "https://nedzik97.github.io/what-to-watch/",
+    githubLink: "https://github.com/Nedzik97/what-to-watch",
+    skills: ["TypeScript", "Redux", "React", "JS", "HTML", "CSS"],
     description:
-      "This is my portfolio, and it's quite simple. It features my pet projects.",
+      "Movie viewing project - using Redux, on which you can watch different films. It will help you explore and enjoy movies easily.",
     libraries: ["classnames", "react-router-dom", "saas", ""],
-    imgPreview: require("../assets/project-images/portfolio.png"),
+    imgPreview: require("../assets/project-images/what-to-watch.png"),
   },
   {
     number: 2,
@@ -83,6 +83,17 @@ export const projects = [
     description:
       "Explore our basic HTML ice cream shop page. It's a simple representation of store",
     imgPreview: require("../assets/project-images/glaccy.png"),
+  },
+  {
+    number: 8,
+    title: "Portfolio",
+    demoLink: "https://nedzik97.github.io/Portfolio/",
+    githubLink: "https://github.com/Nedzik97/Portfolio",
+    skills: ["React", "JS", "HTML", "CSS"],
+    description:
+      "This is my portfolio, and it's quite simple. It features my pet projects.",
+    libraries: ["classnames", "react-router-dom", "saas", ""],
+    imgPreview: require("../assets/project-images/portfolio.png"),
   },
 ];
 
